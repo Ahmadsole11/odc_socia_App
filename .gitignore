@@ -8,3 +8,6 @@ server/node_modules
 package-loc.json
 client/package-loc.json
 server/package-loc.json
+package.loc.json
+client/package.loc.json
+server/package.loc.json
