@@ -24,12 +24,13 @@ app.get('/', (req, res)=>{
     res.status(200).send("Hello")
 })
 
+mongoose.set('strictQuery', true);
 mongoose.connect(DB_URL, Config.mongo_db_connection_string).then(()=>{
     console.log('conntecte to MONGODB');
 })
 .then(()=>{
     app.listen(PORT, ()=>{
-        console.log(`server is running on http://localhost:${PORT}`)
+        console.log(`server is running on http://127.0.0.1:${PORT}`)
     });
 })
 .catch((err)=>{
