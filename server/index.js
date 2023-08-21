@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
 import dotenv from 'dotenv';
 import cors from 'cors'
 
