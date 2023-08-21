@@ -24,7 +24,7 @@ app.get('/', (req, res)=>{
     res.status(200).send("Hello")
 })
 
-mongoose.connect(DB_URL).then(()=>{
+mongoose.connect(DB_URL, Config.mongo_db_connection_string).then(()=>{
     console.log('conntecte to MONGODB');
 })
 .then(()=>{
